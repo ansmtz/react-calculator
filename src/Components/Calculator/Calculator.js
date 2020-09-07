@@ -15,7 +15,15 @@ export default function Calculator() {
     <div className={classes.Calculator}>
       <div className={classes.Head}>
         <h1 className={classes.Title}>Calculator</h1>
-        <span>Designed and developed by Anthony Sedov</span>
+        <span>
+          Designed and developed by Anthony Sedov.{" "}
+          <a
+            className="classes.Link"
+            href="https://github.com/ansmtz/react-calculator"
+          >
+            Code
+          </a>
+        </span>
       </div>
       <Display />
       <Pad>
