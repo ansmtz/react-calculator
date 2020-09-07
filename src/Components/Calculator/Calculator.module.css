@@ -30,4 +30,5 @@
 .Link {
   font-weight: bold;
   text-decoration: none;
+  color: inherit;
 }
