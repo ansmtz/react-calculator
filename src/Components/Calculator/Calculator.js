@@ -18,7 +18,7 @@ export default function Calculator() {
         <span>
           Designed and developed by Anthony Sedov.{" "}
           <a
-            className="classes.Link"
+            className={classes.Link}
             href="https://github.com/ansmtz/react-calculator"
           >
             Code
