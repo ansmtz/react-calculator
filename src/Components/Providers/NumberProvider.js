@@ -47,11 +47,13 @@ export const NumberProvider = (props) => {
   };
 
   const equalHandler = () => {
-    const res = calculate(currentAction);
-    setResult(res.toString());
-    setNumber(res.toString());
-    setStoredNumber("");
-    setCurrentAction("");
+    if (storedNumber.length && number.length) {
+      const res = calculate(currentAction);
+      setResult(res.toString());
+      setNumber(res.toString());
+      setStoredNumber("");
+      setCurrentAction("");
+    }
     // setResult(0);
   };
 
@@ -67,14 +69,7 @@ export const NumberProvider = (props) => {
   };
 
   const backspaceHandler = () => {
-    if (number.length) {
-      const editedNumber = number.slice(0, -1);
-      setNumber(editedNumber);
-    } else if (currentAction.length) {
-      setCurrentAction("");
-    } else if (storedNumber.length) {
-      setStoredNumber(storedNumber.slice(0, -1));
-    }
+    setNumber(`${number.slice(0, -1)}`);
   };
 
   return (
