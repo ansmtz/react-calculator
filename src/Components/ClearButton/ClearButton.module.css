@@ -1,0 +1,28 @@
+.ClearButton {
+  background: #943838;
+  display: flex;
+  border: 1px solid #943838;
+  border-radius: 100vw;
+
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 3rem;
+  height: 3rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #efef;
+  box-shadow: 0 6px #522323;
+  position: relative;
+  cursor: pointer;
+}
+
+.ClearButton:hover {
+  box-shadow: 0 4px #522323;
+  top: 1.6px;
+}
+
+.ClearButton:active {
+  box-shadow: none;
+  top: 4px;
+}

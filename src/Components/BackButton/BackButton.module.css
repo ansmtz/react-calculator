@@ -1,0 +1,28 @@
+.BackButton {
+  background: #3b4768;
+  display: flex;
+  border: 1px solid #3b4768;
+  border-radius: 1rem;
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 3rem;
+  height: 3rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #efef;
+  box-shadow: 0 6px #212738;
+  position: relative;
+  cursor: pointer;
+}
+
+.BackButton:hover {
+  box-shadow: 0 4px #212738;
+  top: 1.6px;
+}
+
+.BackButton:active {
+  box-shadow: none;
+  top: 4px;
+}

@@ -1,0 +1,10 @@
+.Display {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 0.5rem 1rem;
+  text-align: right;
+  background-color: #574b90;
+  color: #fc85ae;
+  font-size: 2rem;
+  border-radius: 1rem;
+}

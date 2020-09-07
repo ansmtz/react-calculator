@@ -1,0 +1,28 @@
+.Calculator {
+  display: grid;
+  width: 80%;
+  max-width: 800px;
+  margin: 0.5rem auto;
+  /* grid-template-columns: 5% 1fr 5%; */
+  grid-template-rows: max-content max-content auto;
+  gap: 3rem;
+  background-color: #303a52;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Head {
+  align-self: start;
+  grid-row: 1/2;
+  color: #fc85ae;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title {
+  margin: 0;
+  padding: 0;
+  flex: 100%;
+}

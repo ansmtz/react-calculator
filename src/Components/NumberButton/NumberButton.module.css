@@ -1,0 +1,35 @@
+.NumberButton {
+  background: #1d212b;
+  display: flex;
+  border: 1px solid #1d212b;
+  border-radius: 100vw;
+
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 3rem;
+  height: 3rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #efef;
+  box-shadow: 0 6px #0d0e11;
+  position: relative;
+  cursor: pointer;
+}
+
+.NumberButton:hover {
+  box-shadow: 0 4px #0d0e11;
+  top: 1.6px;
+}
+
+.NumberButton:active {
+  box-shadow: none;
+  top: 4px;
+}
+
+.Occupied {
+  grid-column: span 2;
+  align-self: stretch;
+  width: 100%;
+  /* margin-right: -2rem; */
+}
