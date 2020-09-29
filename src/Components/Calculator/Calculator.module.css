@@ -1,15 +1,22 @@
 .Calculator {
   display: grid;
-  width: 80%;
-  max-width: 800px;
+  /* width: 30%; */
+  /* width: clamp(300px, 400px, 800px);
+  width: max(50%, 400px); */
+  width: 100%;
   margin: 0.5rem auto;
-  /* grid-template-columns: 5% 1fr 5%; */
   grid-template-rows: max-content max-content auto;
-  gap: 3rem;
+  gap: 1rem;
   background-color: #303a52;
   border-radius: 2rem;
   padding: 2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 400px) {
+  .Calculator {
+    width: 80%;
+  }
 }
 
 .Head {

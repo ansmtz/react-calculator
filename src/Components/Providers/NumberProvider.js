@@ -33,16 +33,15 @@ export const NumberProvider = (props) => {
       storedNumberFormatted = parseFloat(storedNumber);
     switch (value) {
       case "+":
-        return numberFormatted + storedNumberFormatted;
+        return +(numberFormatted + storedNumberFormatted).toFixed(12);
       case "/":
-        return (storedNumberFormatted / numberFormatted).toFixed(3);
+        return +(storedNumberFormatted / numberFormatted).toFixed(12);
       case "*":
-        return storedNumberFormatted * numberFormatted;
+        return +(storedNumberFormatted * numberFormatted).toFixed(12);
       case "-":
-        return storedNumberFormatted - numberFormatted;
+        return +(storedNumberFormatted - numberFormatted).toFixed(12);
       default:
         return number;
-        break;
     }
   };
 
